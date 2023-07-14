@@ -22,12 +22,6 @@ int main(void)
 		i++;
 	}
 
-	while (j < 91)
-	{
-		putchar(j);
-		j++;
-	}
-
 	putchar(10);
 
 	return (0);
