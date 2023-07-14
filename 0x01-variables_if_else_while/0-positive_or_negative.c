@@ -4,10 +4,12 @@
 
 /* more headers goes there */
 
-/*
- * description: prints the n variable and checks if negative or positive,
- *		or n == zero
- * return: always returns 0
+/**
+ * main - Entry point
+ *
+ * Description: prints the n variable and check if + or -
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
