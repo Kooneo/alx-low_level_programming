@@ -5,11 +5,11 @@
  *
  * Description: Returns 1 if c is lowercase otheewise 0
  *
- * Return: Always 0 (Success)
+ * Return: 1 or 0
  */
 int _islower(int c)
 {
-	if (islower(c))
+	if (c >= 97 && c <= 122)
 	{
 		return 1;
 	}
