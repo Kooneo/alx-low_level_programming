@@ -5,7 +5,7 @@
  * @str: input string.
  * Return: length of a string.
  */
-int _puts(char *str)
+void _puts(char *str)
 {
 	int i = 0;
 
