@@ -3,7 +3,7 @@
 /**
  * main - print the letters of the alphabe
  *
- * Description: print the letters of the aphabet in lower then in uppercase
+ * Description: print the letters of the alphabet except e, q
  *
  * Return: Always 0 (Success)
  */
