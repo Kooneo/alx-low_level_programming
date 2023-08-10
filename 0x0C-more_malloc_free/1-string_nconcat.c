@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - Concatenates two strings.
- * @str1: First string.
- * @str2: Second string.
- * @num_bytes: Amount of bytes.
+ * string_nconcat_new - concatenates two strings.
+ * @str1: first string.
+ * @str2: second string.
+ * @num_bytes: amount of bytes.
  *
- * Return: Pointer to the allocated memory.
- *         If malloc fails, status value is equal to 98.
+ * Return: pointer to the allocated memory.
+ * if malloc fails, status value is equal to 98.
  */
 char * string_nconcat(char * str1, char * str2, unsigned int num_bytes) {
     char * result;
@@ -37,12 +37,11 @@ char * string_nconcat(char * str1, char * str2, unsigned int num_bytes) {
     if (result == NULL)
         return (NULL);
 
-    for (i = 0; i < len_result; i++) {
+    for (i = 0; i < len_result; i++)
         if (i < len_str1)
             result[i] = str1[i];
         else
             result[i] = str2[i - len_str1];
-    }
 
     result[i] = '\0';
 
