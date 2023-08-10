@@ -1,4 +1,5 @@
 #include "main.h"
+
 #include <stdlib.h>
 
 /**
@@ -10,9 +11,8 @@
  * Return: Pointer to the allocated memory.
  *         If malloc fails, status value is equal to 98.
  */
-char *string_nconcat(char *str1, char *str2, unsigned int num_bytes)
-{
-    char *result;
+char * string_nconcat(char * str1, char * str2, unsigned int num_bytes) {
+    char * result;
     unsigned int len_str1, len_str2, len_result, i;
 
     if (str1 == NULL)
@@ -22,10 +22,10 @@ char *string_nconcat(char *str1, char *str2, unsigned int num_bytes)
         str2 = "";
 
     for (len_str1 = 0; str1[len_str1] != '\0'; len_str1++)
-        ;
+    ;
 
     for (len_str2 = 0; str2[len_str2] != '\0'; len_str2++)
-        ;
+    ;
 
     if (num_bytes > len_str2)
         num_bytes = len_str2;
@@ -37,8 +37,7 @@ char *string_nconcat(char *str1, char *str2, unsigned int num_bytes)
     if (result == NULL)
         return (NULL);
 
-    for (i = 0; i < len_result; i++)
-    {
+    for (i = 0; i < len_result; i++) {
         if (i < len_str1)
             result[i] = str1[i];
         else
@@ -49,4 +48,3 @@ char *string_nconcat(char *str1, char *str2, unsigned int num_bytes)
 
     return (result);
 }
-
